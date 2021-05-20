@@ -1,0 +1,14 @@
+---
+- name: Install SSHPass for Ansible to user ssh with passwords
+  apt:
+    name: sshpass
+    state: present
+  become: yes
+  tags: 
+  - control
+  
+# - name: Create passwordless sudo elevation
+#   ansible.builtin.lineinfile:
+#     path: /etc/sudoers
+#     state: 
+#     line: "control ALL = (ALL) NOPASSWD: ALL"

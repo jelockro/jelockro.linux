@@ -1,2 +1,3 @@
 ---
 # tasks file for linux_config
+- import_tasks: configure_ssh.yml
